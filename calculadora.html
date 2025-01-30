@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Linguagem de Programação 23/01/2025 PEDRO ALVES DE OLVEIRA</title>
+</head>
+
+<body>
+
+    <h1>Calculadora Pedro Alves De Oliveira 23/01/2025</h1>
+    <input type="number" id="num1" placeholder="Digite um número">
+    <input type="number" id="num2" placeholder="Digite outro">
+    <h1></h1>
+    <h1></h1>
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtração</button>
+    <button onclick="multiplicar()">Multiplicação</button>
+    <button onclick="dividir()">Divisão </button>
+
+    <h1 id="resultado"></h1>
+
+    <script>
+        function somar() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var resultado = num1 + num2;
+            document.getElementById("resultado").textContent = "Resultado: " + resultado;
+        }
+
+        function subtrair() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var resultado = num1 - num2;
+            document.getElementById("resultado").textContent = "Resultado: " + resultado;
+        }
+
+        function multiplicar() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var resultado = num1 * num2;
+            document.getElementById("resultado").textContent = "Resultado: " + resultado;
+        }
+
+        function dividir() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            if (num2 !== 0) {
+                var resultado = num1 / num2;
+                document.getElementById("resultado").textContent = "Resultado: " + resultado;
+            }
+        }
+    </script>
+</body>
+
+</html>
